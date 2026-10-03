@@ -1,0 +1,7 @@
+# Backend (Django + DRF) - API only, no HTML storefronts.
+# Versions verified against Python 3.13.
+Django==5.2.5
+djangorestframework==3.16.1
+djangorestframework-simplejwt==5.5.1
+django-cors-headers==4.9.0
+Pillow==12.0.0

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * Tenant theme variables.
+ *
+ * Written at runtime by TenantContext from /api/v1/storefront/init/
+ * (theme.primary_color / secondary_color / accent_color), so the SAME
+ * compiled stylesheet renders any store's brand. Use them anywhere
+ * Tailwind accepts an arbitrary value:
+ *
+ *     className="bg-[var(--brand-primary)] text-[var(--brand-accent)]"
+ *
+ * The defaults below are the backend's DEFAULT_THEME fallback, shown
+ * only until the init request resolves.
+ * ------------------------------------------------------------------ */
+:root {
+  --brand-primary: #111827;
+  --brand-secondary: #6b7280;
+  --brand-accent: #f59e0b;
+}
+
+body {
+  @apply antialiased text-gray-900 bg-white;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
